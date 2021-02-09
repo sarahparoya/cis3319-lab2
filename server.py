@@ -4,7 +4,7 @@ import socket
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #creating the socket
 port = 12345
 s.bind(('', port)) #binding the socket to address
-s.listen(5) #start listening
+s.listen(10) #start listening
 keystr = "iamakeys" #key string must be multiple of 8
 key = DesKey(keystr.encode('utf-8')) #create key
 print("server is running...")
